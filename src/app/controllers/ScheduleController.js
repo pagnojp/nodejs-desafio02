@@ -11,7 +11,7 @@ class ScheduleController {
         date: {
           [Op.between]: [
             moment()
-              .startOf('w')
+              .startOf('day')
               .format(),
             moment()
               .endOf('w')
